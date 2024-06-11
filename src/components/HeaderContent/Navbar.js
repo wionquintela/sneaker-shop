@@ -2,10 +2,12 @@ export default function Navbar(props) {
   const ul = {
     listStyleType: "none",
     margin: 0,
-    paddingTop: 0,
+    padding: 0,
     overflow: "hidden",
+    display: "flex", // Use flexbox for layout
+    justifyContent: "center", // Center align items horizontally
   };
-  const li = { display: "inline", margin: "40px", marginRight: "100px" };
+  const li = { margin: "0 20px" }; // Adjust margin for spacing
 
   const button = {
     background: "none",
@@ -18,6 +20,7 @@ export default function Navbar(props) {
   };
 
   const style = { fontSize: "16px" };
+
   return (
     <>
       <div style={style}>

@@ -94,3 +94,31 @@ a:active {
     /* Smaller height for smaller screens */
   }
 }
+
+/*footer content*/
+/* footer content text responsiveness*/
+.footerContent {
+  padding-top: 80px;
+}
+
+@media (max-width: 767.98px) {
+  .footerContent {
+    padding-top: 6px;
+  }
+}
+
+
+/* footer content text responsiveness*/
+.footerContentText {
+  padding-top: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .footerContentText {
+    padding-top: 6px;
+  }
+}
+
+.footerSection {
+  padding-bottom: 30px
+}

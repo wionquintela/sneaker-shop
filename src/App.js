@@ -4,12 +4,13 @@ import Header from "./components/HeaderContent/Header";
 import Men from "./components/ShoesContent/Men/Men";
 import Women from "./components/ShoesContent/Women/Women";
 import Kids from "./components/ShoesContent/Kids/Kids";
+import Footer from "./components/Home/Footer";
 import { useState } from "react";
 function App() {
   // const [showPage, setShowPage] = useState(<Men />);
 
   return (
-    <div className="App">
+    <div className="App" style={{ overFlow: "hidden" }}>
       <Header />
       <BrowserRouter>
         <Routes>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/kids" element={<Kids />} />
         </Routes>
       </BrowserRouter>
+      <Footer className="footerSection text-center footerContent" />
     </div>
   );
 }
