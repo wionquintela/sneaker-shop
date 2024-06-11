@@ -11,7 +11,14 @@ export default function Header(props) {
           <strong>MIDYEAR SALE</strong>. SUMMER SALE.{" "}
           <strong>MIDYEAR SALE</strong>. SUMMER SALE.{" "}
           <strong>MIDYEAR SALE</strong>. SUMMER SALE.{" "}
-          <strong>MIDYEAR SALE</strong>.
+          <strong>MIDYEAR SALE</strong>.{" "}
+          <a
+            href="https://www.flaticon.com/free-icons/shoe"
+            title="shoe icons"
+            style={{ fontSize: "10px" }}
+          >
+            Shoe icons created by Freepik - Flaticon
+          </a>
         </marquee>
       </div>
       <section style={style} className="HeaderSection shadow">
