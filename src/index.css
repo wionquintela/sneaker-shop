@@ -1,13 +1,96 @@
+@font-face {
+  font-family: "myFont";
+  src: url("./fonts/fuegoFont.ttf");
+}
+
+@font-face {
+  font-family: "chillFont";
+  src: url("./fonts/chillFont.ttf");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "chillFont";
+    font-weight: 200;
+    font-size: larger;
+    /* font-family: "myFont"; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+/*header settings*/
+.shopHeaderTitle {
+  font-family: "myFont";
+  font-size: 100px;
+}
+/* Media query for screens smaller than 768px (common mobile breakpoint) */
+@media (max-width: 767px) {
+  .shopHeaderTitle {
+    font-size: 50px;
+  }
+}
+
+.carousel-inner>.item {
+  height: 400px;
+}
+
+.links {
+  font-family: "chillFont";
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.HeaderSection {
+  padding: 30px;
+}
+
+.ContentSection {
+padding-top: 100px;
+}
+
+.ContentTitle {
+  font-size: 60px;
+  color: rgb(46, 5, 46)
+}
+
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+/*carousel*/
+.carousel-container {
+  max-width: 600px;
+  /* Default width */
+  margin: 0 auto;
+  /* Center the carousel horizontally */
+}
+
+.carousel img {
+  max-height: 500px;
+  /* Default height */
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 100%;
+    /* Full width on smaller screens */
+  }
+
+  .carousel img {
+    max-height: 200px;
+    /* Smaller height for smaller screens */
+  }
 }
