@@ -1,19 +1,21 @@
 export default function ShoeCard(props) {
   return (
     <>
-      <div className="d-flex justify-content-center align-items-center m-1">
-        {" "}
-        <div class="card " style={{ maxWidth: "1000px", height: "600px" }}>
+      <div className="d-flex justify-content-center align-items-center m-1 shoes">
+        <div className="card" style={{ maxWidth: "100%", height: "auto" }}>
           <img
             src={props.image}
-            class="card-img-top"
-            alt="..."
-            style={{ maxWidth: "500px" }}
+            className="card-img-top"
+            alt={props.title}
+            style={{ width: "100%", height: "auto", objectFit: "cover" }}
           />
-          <div class="card-body">
-            <h5 class="card-title">{props.price}</h5>
-            <h5 class="card-title display-6">{props.title}</h5>
-            <p class="card-text" style={{ height: "100px" }}>
+          <div className="card-body">
+            <h5 className="card-title">{props.price}</h5>
+            <h5 className="card-title cardTitle">{props.title}</h5>
+            <p
+              className="card-text"
+              style={{ maxHeight: "150px", overflowY: "auto" }}
+            >
               {props.desc}
             </p>
           </div>

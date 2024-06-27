@@ -14,9 +14,7 @@ export default function Men(props) {
   return (
     <>
       <section className="ContentSection">
-        <h1 className="shopHeaderTitle text-center ContentTitle">
-          Men Apparel
-        </h1>
+        <h1 className="text-center ContentTitle">Men Apparel</h1>
         <div style={{ marginTop: "40px" }}>
           <Row className="justify-content-center " lg={4} sm={2} xs={1}>
             {menShoes}

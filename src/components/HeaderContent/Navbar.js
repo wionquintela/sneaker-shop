@@ -46,6 +46,13 @@ export default function Navbar(props) {
                 <button style={button}>Kids</button>
               </a>
             </li>
+            <li style={li}>
+              <a href="/cart" className="links">
+                <button style={button}>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>

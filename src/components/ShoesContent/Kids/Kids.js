@@ -13,9 +13,7 @@ export default function Kids(props) {
   return (
     <>
       <section className="ContentSection">
-        <h1 className="shopHeaderTitle text-center ContentTitle">
-          Kid's Apparel
-        </h1>
+        <h1 className="text-center ContentTitle">Kid's Apparel</h1>
         <div style={{ marginTop: "40px" }}>
           <Row className="justify-content-center " lg={4} sm={2} xs={1}>
             {kidsShoes}

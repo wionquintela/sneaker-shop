@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "chillFont";
-  src: url("./fonts/chillFont.ttf");
+  src: url("./fonts/static/Raleway-Regular.ttf");
 }
 
 body {
@@ -17,10 +17,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+section {
+  padding: 25px;
+  padding-top: 100px;
+}
+
 /*header settings*/
 .shopHeaderTitle {
   font-family: "myFont";
-  font-size: 100px;
+  font-size: 80px;
 }
 /* Media query for screens smaller than 768px (common mobile breakpoint) */
 @media (max-width: 767px) {
@@ -56,43 +62,31 @@ padding-top: 100px;
 }
 
 
-a:visited {
+/*Nav links*/
+
+.links {
+  text-decoration: none;
   color: black;
+  transition: text-decoration 0.3s ease;
 }
 
-a:hover {
-  color: black;
+.links:hover {
+  text-decoration: underline;
+  /* Add underline on hover */
+}
+/* Ensure buttons do not interfere */
+.links button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: inherit; /* Inherit color to ensure consistency */
+  font: inherit; /* Inherit font styles */
 }
 
-a:active {
-  color: black;
-}
-
-/*carousel*/
-.carousel-container {
-  max-width: 600px;
-  /* Default width */
-  margin: 0 auto;
-  /* Center the carousel horizontally */
-}
-
-.carousel img {
-  max-height: 500px;
-  /* Default height */
-  object-fit: cover;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .carousel-container {
-    max-width: 100%;
-    /* Full width on smaller screens */
-  }
-
-  .carousel img {
-    max-height: 200px;
-    /* Smaller height for smaller screens */
-  }
+/* Optional: Add styling to buttons for better appearance */
+.links button:hover {
+  text-decoration: underline; /* Add underline effect to the button */
 }
 
 /*footer content*/
@@ -121,4 +115,24 @@ a:active {
 
 .footerSection {
   padding-bottom: 30px
+}
+
+/*Cards*/
+
+.cardTitle {
+  font-size: 25px;
+}
+
+/**/
+.shoes:hover {
+  opacity: 75%;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+/**/
+.mb-4:hover {
+  opacity: 75%;
+  transition: 200ms;
+  cursor: pointer;
 }
