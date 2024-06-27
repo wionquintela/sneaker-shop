@@ -11,9 +11,9 @@ export default function Header(props) {
         <div className="text-center">
           <h1 className="shopHeaderTitle">Wizzy Sneakers</h1>
           {/* <p>A Nike Inspired Ecommerce Store</p> */}
-          <div>
-            <Navbar NavbarClicked={props.NavbarClicked} />
-          </div>
+        </div>
+        <div style={{ paddingTop: "15px" }}>
+          <Navbar NavbarClicked={props.NavbarClicked} />
         </div>
       </section>
     </>
