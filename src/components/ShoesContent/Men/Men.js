@@ -2,6 +2,7 @@ import MenShoeList from "./ShoeList";
 import ShoeCard from "../ShoeCard";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Modal from "react-bootstrap/Modal";
 
 export default function Men(props) {
   const menShoes = MenShoeList.map((item) => {

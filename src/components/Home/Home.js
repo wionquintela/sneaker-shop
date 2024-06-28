@@ -28,7 +28,7 @@ export default function Home(props) {
             <Col className="mb-4">
               <a href="/men">
                 <Image
-                  src="../assets/Men/air jordan 9g.webp"
+                  src="../assets/Men Shoes/air jordan 9g.webp"
                   roundedCircle
                   style={{ width: "300px" }}
                   className="shoes"
@@ -39,7 +39,7 @@ export default function Home(props) {
             <Col className="mb-4">
               <a href="/women">
                 <Image
-                  src="../assets/Women/air force 1 shadow.webp"
+                  src="../assets/Women Shoes/air force 1 shadow.webp"
                   roundedCircle
                   style={{ width: "300px" }}
                   className="shoes"
@@ -52,7 +52,7 @@ export default function Home(props) {
               <a href="/kids">
                 {" "}
                 <Image
-                  src="../assets/Kids/air jordan legacy 312.webp"
+                  src="../assets/Kids Shoes/air jordan legacy 312.webp"
                   roundedCircle
                   style={{ width: "300px" }}
                   className="shoes"

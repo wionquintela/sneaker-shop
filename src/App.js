@@ -9,8 +9,7 @@ import Cart from "./components/Cart/Cart";
 import { useState } from "react";
 
 function App() {
-  // const [showPage, setShowPage] = useState(<Men />);
-
+  const [shoe, setShoe] = useState([]);
   return (
     <div className="App" style={{ overFlow: "hidden" }}>
       <Header />
@@ -18,10 +17,19 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/men" element={<Men />} />
-            <Route path="/women" element={<Women />} />
-            <Route path="/kids" element={<Kids />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route
+              path="/men"
+              element={<Men shoe={shoe} setShoe={setShoe} />}
+            />
+            <Route
+              path="/women"
+              element={<Women shoe={shoe} setShoe={setShoe} />}
+            />
+            <Route
+              path="/kids"
+              element={<Kids shoe={shoe} setShoe={setShoe} />}
+            />
+            <Route path="/cart" element={<Cart shoe={shoe} />} />
           </Routes>
         </BrowserRouter>
       </div>
